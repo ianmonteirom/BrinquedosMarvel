@@ -6,7 +6,7 @@ function slideShow(){
     document.getElementById('imgCarrossel').src=imagens[index];
     index++;
 
-    if(index == imagens.length){
+    if (index == imagens.length) {
         index = 0;
     }
     setTimeout('slideShow()', time);
