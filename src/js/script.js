@@ -12,3 +12,20 @@ function slideShow(){
     setTimeout('slideShow()', time);
 }
 slideShow();
+
+function medidas(){
+
+    const contador = document.getElementById("contador")
+    let valor=0;
+    
+    let tempo =setInterval(()=>{
+        valor +=1;
+
+        contador.innerHTML = `+ ${valor}`;
+
+        if(valor ==300){
+            clearInterval(tempo)
+        }
+
+    })
+}
